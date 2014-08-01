@@ -1,0 +1,33 @@
+/* CSS declarations go here */
+body{
+	font-family: 'News Cycle', sans-serif;
+}
+
+h1{
+	color: gray;
+}
+
+h2{
+	color: pink;
+}
+
+input#messageBox {
+	width: 300px;
+}
+
+#chatBox {
+	max-height: 200px;
+	width: 410px;
+	background: #6699FF;
+	border: 1px;
+	overflow: auto;
+}
+
+#timestamp {
+	float: left;
+	margin-right: 10px;
+}
+
+#msgpanel {
+	margin-left: 20%;
+}

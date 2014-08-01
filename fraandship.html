@@ -1,0 +1,33 @@
+<head>
+	<title>fraanship</title>
+	<link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+	<script src="fraandship.js"></script>
+</head>
+
+<body>
+	<h1>welcome to fraandship</h1>
+	<h2>great for fraands</h2>
+    <h4>This is where friends come to chat</h4>
+
+<h3>your fraand chat</h3>
+<div id="chatBox">
+ {{> messages}}
+</div>
+{{> entry}}
+</body>
+
+<template name="entry">
+    <p>
+    <input type="text" id="name" placeholder="your name">
+    <input type="text" id="messageBox" placeholder="your message"></p>
+</template>
+
+<template name="messages">
+    {{#each messages}}
+        {{> message}} <!--echo of message template-->
+    {{/each}}
+</template>
+
+<template name="message">
+    <p><div id="timestamp" style="clear: both;">{{time}}</div> <div id="msgpanel"><strong>{{name}}:</strong> {{message}}</div></p>
+</template>
